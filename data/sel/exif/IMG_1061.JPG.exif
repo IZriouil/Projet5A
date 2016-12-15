@@ -1,0 +1,12 @@
+{
+    "width": 3264, 
+    "camera": "v2 apple iphone 5s back camera 4.15mm f/2.2 3264 2448 perspective 0.8055", 
+    "projection_type": "perspective", 
+    "orientation": 6, 
+    "focal_ratio": 0.8055555555555556, 
+    "make": "Apple", 
+    "gps": {}, 
+    "model": "iPhone 5s back camera 4.15mm f/2.2", 
+    "capture_time": 1481150004.216, 
+    "height": 2448
+}

@@ -1,0 +1,74 @@
+    def __init__(self, data_path):
+    def _load_config(self):
+    def images(self):
+    def __image_file(self, image):
+    def load_image(self, image):
+    def image_as_array(self, image):
+    def _undistorted_image_path(self):
+    def _undistorted_image_file(self, image):
+    def undistorted_image_as_array(self, image):
+    def save_undistorted_image(self, image, array):
+    def _depthmap_path(self):
+    def _depthmap_file(self, image, suffix):
+    def raw_depthmap_exists(self, image):
+    def save_raw_depthmap(self, image, depth, plane, score):
+    def load_raw_depthmap(self, image):
+    def clean_depthmap_exists(self, image):
+    def save_clean_depthmap(self, image, depth, plane, score):
+    def load_clean_depthmap(self, image):
+    def __is_image_file(filename):
+    def set_image_path(self, path):
+    def set_image_list(self, image_list):
+    def __exif_path(self):
+    def __exif_file(self, image):
+    def load_exif(self, image):
+    def save_exif(self, image, data):
+    def feature_type(self):
+    def descriptor_type(self):
+    def __feature_path(self):
+    def __feature_file(self, image):
+    def __save_features(self, filepath, image, points, descriptors, colors=None):
+    def features_exist(self, image):
+    def load_features(self, image):
+    def save_features(self, image, points, descriptors, colors):
+    def feature_index_exists(self, image):
+    def __feature_index_file(self, image):
+    def load_feature_index(self, image, features):
+    def save_feature_index(self, image, index):
+    def __preemptive_features_file(self, image):
+    def load_preemtive_features(self, image):
+    def save_preemptive_features(self, image, points, descriptors):
+    def matcher_type(self):
+    def __matches_path(self):
+    def __matches_file(self, image):
+    def matches_exists(self, image):
+    def load_matches(self, image):
+    def save_matches(self, image, matches):
+    def find_matches(self, im1, im2):
+    def __tracks_graph_file(self):
+    def load_tracks_graph_as_list(self):
+    def load_tracks_graph(self):
+    def save_tracks_graph(self, graph):
+    def __reconstruction_file(self, filename):
+    def load_reconstruction(self, filename=None):
+    def save_reconstruction(self, reconstruction, filename=None, indent=4):
+    def __reference_lla_path(self):
+    def invent_reference_lla(self, images=None):
+    def save_reference_lla(self, reference):
+    def load_reference_lla(self):
+    def __camera_models_file(self):
+    def load_camera_models(self):
+    def save_camera_models(self, camera_models):
+    def __camera_models_overrides_file(self):
+    def camera_models_overrides_exists(self):
+    def load_camera_models_overrides(self):
+    def profile_log(self):
+    def __navigation_graph_file(self):
+    def save_navigation_graph(self, navigation_graphs):
+    def __ply_file(self):
+    def save_ply(self, reconstruction):
+    def __ground_control_points_file(self):
+    def ground_control_points_exist(self):
+    def load_ground_control_points(self):
+def load_tracks_graph(fileobj):
+def save_tracks_graph(fileobj, graph):

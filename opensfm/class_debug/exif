@@ -1,0 +1,30 @@
+def eval_frac(value):
+def gps_to_decimal(values, reference):
+def get_float_tag(tags, key):
+def get_frac_tag(tags, key):
+def compute_focal(focal_35, focal, sensor_width, sensor_string):
+def sensor_string(make, model):
+def camera_id(make, model, width, height, projection_type, focal):
+def extract_exif_from_file(fileobj):
+def get_xmp(fileobj):
+def get_gpano_from_xmp(xmp):
+    def __init__(self, fileobj):
+    def extract_image_size(self):
+    def extract_make(self):
+    def extract_model(self):
+    def extract_projection_type(self):
+    def extract_focal(self):
+    def extract_orientation(self):
+    def extract_ref_lon_lat(self):
+    def extract_lon_lat(self):
+    def extract_altitude(self):
+    def extract_dop(self):
+    def extract_geo(self):
+    def extract_capture_time(self):
+    def extract_exif(self):
+def hard_coded_calibration(exif):
+def focal_ratio_calibration(exif):
+def default_calibration(data):
+        'focal': data.config['default_focal_prior'],
+def camera_from_exif_metadata(metadata, data):
+                 or default_calibration(data))

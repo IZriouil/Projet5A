@@ -1,0 +1,68 @@
+class Pose(object):
+    The extrinsic parameters are defined by a 3x1 rotation vector which
+    def __init__(self, rotation=np.zeros(3), translation=np.zeros(3)):
+    def rotation(self):
+    def rotation(self, value):
+    def translation(self):
+    def translation(self, value):
+    def transform(self, point):
+    def transform_inverse(self, point):
+    def get_rotation_matrix(self):
+    def set_rotation_matrix(self, rotation_matrix):
+    def get_origin(self):
+    def set_origin(self, origin):
+    def get_Rt(self):
+    def compose(self, other):
+    def inverse(self):
+
+class ShotMetadata(object):
+    def __init__(self):
+    
+class ShotMesh(object):
+    def __init__(self):
+    A camera is unique defined for its identification description (id),
+
+class Camera(object):
+
+
+class PerspectiveCamera(Camera):
+    def __init__(self):
+    def project(self, point):
+    def pixel_bearing(self, pixel):
+    def pixel_bearings(self, pixels):
+    def back_project(self, pixel, depth):
+    def get_K(self):
+    def get_K_in_pixel_coordinates(self, width=None, height=None):
+
+
+class SphericalCamera(Camera):
+    """Abstract camera class.
+    parameters, which depend on the particular Camera sub-class.
+    def __init__(self):
+    def project(self, point):
+    def pixel_bearing(self, pixel):
+    def pixel_bearings(self, pixels):
+    A shot here is refered as a unique view inside the scene defined by
+
+class Shot(object):
+    def __init__(self):
+    def project(self, point):
+    def back_project(self, pixel, depth):
+        The plane is defined by z = depth in the shot reference frame.
+    def viewing_direction(self):
+
+class Point(object):
+    def __init__(self):
+
+class GroundControlPointObservation(object):
+    def __init__(self):
+
+class Reconstruction(object):
+    
+    def __init__(self):
+    def add_camera(self, camera):
+    def get_camera(self, id):
+    def add_shot(self, shot):
+    def get_shot(self, id):
+    def add_point(self, point):
+    def get_point(self, id):

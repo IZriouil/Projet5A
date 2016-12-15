@@ -1,0 +1,23 @@
+{
+    "v2 unknown unknown 3264 2448 perspective 0": {
+        "focal_prior": 0.8055555555555556, 
+        "width": 3264, 
+        "k1": -0.36824142583326908, 
+        "k2": 0.28485396624352155, 
+        "k1_prior": -0.36824142583326908, 
+        "k2_prior": 0.28485396624352155, 
+        "projection_type": "perspective", 
+        "focal": 0.8055555555555556, 
+        "height": 2448
+    }, 
+    "v2 apple iphone 5s back camera 4.15mm f/2.2 3264 2448 perspective 0.8055": {
+        "width": 3264, 
+        "k1": -0.36824142583326908, 
+        "k2": 0.28485396624352155, 
+        "k1_prior": -0.36824142583326908, 
+        "k2_prior": 0.28485396624352155, 
+        "projection_type": "perspective", 
+        "focal": 0.8055555555555556, 
+        "height": 2448
+    }
+}
